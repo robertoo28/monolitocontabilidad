@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="368.0" prefWidth="780.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="299.0" prefWidth="740.0">
+      <children>
+          <Button fx:id="btnIngreso" layoutX="27.0" layoutY="164.0" onAction="#onIngresoButtonClick" prefHeight="25.0" prefWidth="120.0" text="Registrar Ingreso" />
+         <Button fx:id="btnEgreso" layoutX="27.0" layoutY="203.0" mnemonicParsing="false" onAction="#onEgresoButtonClick" prefHeight="25.0" prefWidth="120.0" text="Registrar Egreso" />
+         <TableView fx:id="tabla" layoutX="301.0" layoutY="5.0" prefHeight="249.0" prefWidth="433.0" />
+      
+          <Label fx:id="welcomeText" />
+         <TextField fx:id="textFieldMonto" layoutX="87.0" layoutY="30.0" prefHeight="26.0" prefWidth="70.0" />
+         <TextField fx:id="textFieldConcepto" layoutX="87.0" layoutY="87.0" />
+         <Label layoutX="27.0" layoutY="35.0" text="Monto" />
+         <Label layoutX="27.0" layoutY="91.0" text="Concepto" />
+      </children>
+   </Pane>
+</VBox>
